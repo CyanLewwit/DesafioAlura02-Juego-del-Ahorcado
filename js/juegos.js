@@ -178,7 +178,7 @@ function finalDeLaPartida(aciertos,errores,palabra){
 	var AreaGanador = document.querySelector(".ganador"); 
 	var AreaPalabraSecreta = document.querySelector(".palabra-secreta");
 
-	if (errores == 7){
+	if (errores == 6){
 		activarTeclado=false;
 		AreaJuego.classList.add("oculto");
 		AreaGameOver.classList.remove("oculto");
