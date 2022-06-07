@@ -1,0 +1,220 @@
+/*Inicio*/
+html {
+	min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+header{
+	padding: 20px 0;
+}
+.logo-head{
+	margin: 10px 0 0 10px;
+}
+
+.titulo{
+	text-align: center;
+	font-size: 30px;
+	color: #0A3871;
+	font-family: cursive;
+}
+
+main{
+	min-height: 50%;
+	margin: 20px 0;
+}
+.area-inicio{
+	width: 100%;
+}
+
+
+.btt-contenedor{
+	text-align: center;
+}
+
+.btt-iniciar-juego{
+	margin-top: 100px;
+	width: 230px;
+	height: 50px;
+	font-size: 20px;
+	background: #0A3871;
+	border-radius: 24px;
+	color: white;
+}
+
+.btt-agregar-palabras{
+	width: 230px;
+	height: 30px;
+	font-size: 15px;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	color: #0A3871;
+}
+
+.caja{
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer{
+	background: transparent;
+	color: black;
+	margin: 20px 0;
+	padding: 20px 0;
+	position: fixed;
+	bottom: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.oculto{
+	display: none;
+}
+
+/*Agregar Palabra*/
+
+.area-ingresar-palabra p{
+	text-align: center;
+	font-size: 32px;
+	color: #0A3871;
+}
+
+.texto-contenedor{
+	margin: 75px auto;
+	height: 150px;
+	text-align: center;
+}
+
+.palabra-a-agregar{
+	border-style: solid;
+	border-radius: 10px;
+	align-self: center;
+	text-transform: uppercase;
+}
+
+.btt-guardar-palabra{
+padding: 5px;
+width: 100px;
+background: #0A3871;
+border-radius: 15px;
+color: white;
+}
+
+.btt-cancelar{
+padding: 5px;
+width: 100px;
+border-radius: 15px;
+color: black;
+}
+
+#error-alguardar-palabra{
+	color: red;
+	font-size: 15px;
+	font-family: !important;
+}
+
+/*Area Juegos*/
+
+.canvas{
+	width: 100%;
+	height: 250px;
+	max-width: 1200px;
+}
+
+
+.campo-letras{
+	border: darkblue;
+	text-align: center;
+}
+
+.letras-guiones{
+	resize: none;
+	font-size: 25px;
+	color: black;
+	height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 5px 0;
+	display: inline-block;
+}
+
+.letras-erroneas{
+	resize: none;
+	font-size: 25px;
+	color: red;
+	height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 5px 0; 
+}
+
+.letra{
+	display: none;
+}
+
+.game-over p{
+	text-align: center;
+	font-size: 40px;
+	font-family: cursive;
+	color: red;
+}
+
+.game-over{
+	text-align: center;
+}
+
+.game-over a{
+	text-decoration: none;
+	color: azure;
+}
+
+.palabra-secreta{
+	resize: none;
+	color: red;
+	font-family: cursive;
+	border: none;
+	font-size: 35px;
+	height: 50px;
+	text-align: center;
+}
+
+.game-over button{
+	padding: 15px;
+	width: 300px;
+	font-size: 25px;
+	color: azure;
+	background: #0A3871;
+	border-radius: 15px;
+	font-family: fantasy;
+	margin-top: 100px;
+}
+
+.ganador{
+	text-align: center;
+}
+
+.ganador p{
+	text-align: center;
+	font-size: 40px;
+	font-family: cursive;
+	color: green;
+}
+
+.ganador a{
+	text-decoration: none;
+	color: azure;
+}
+
+.ganador button{
+	padding: 15px;
+	width: 300px;
+	font-size: 25px;
+	color: azure;
+	background: #0A3871;
+	border-radius: 15px;
+	font-family: fantasy;
+	margin-top: 100px;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Juego del Ahorcado - Alura</title>
+	<link rel="shortcut icon" href="img/ahorcado.jpg">
+	
+	<link rel="stylesheet"  href="css/reset.css">
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<header><a href="index.html"><img src="img/vector.png" alt="logo" class="logo-head"></a><h1 class="titulo">Juego del Ahorcado</h1></header>
+
+	<main>
+		<div class="area-inicio">
+			<div class="btt-contenedor">
+				<button class="btt-iniciar-juego">Iniciar Juego</button>
+			</div>
+			<div class="btt-contenedor">
+				<button class="btt-agregar-palabras">Agregar nueva palabra</button>
+			</div>
+		</div>
+
+		<div class="area-ingresar-palabra">
+			<p>Ingresar Nueva Palabra</p>
+			<div class="texto-contenedor">
+				<input type="text" class="palabra-a-agregar">
+				<button class="btt-guardar-palabra">Guardar</button>
+				<button class="btt-cancelar">Cancelar</button>
+				<p id="error-alguardar-palabra">La palabra a agregar contiene caracteres invalidos</p>
+			</div>
+		</div>
+
+		<div class="area-juego">
+			<canvas class="canvas"></canvas>
+			<div class="campo-letras">
+				<textarea class="letras-guiones" readonly></textarea>
+			</div>
+			<div class="campo-letras">
+				<textarea class="letras-erroneas" readonly></textarea>
+			</div>
+		</div>
+
+		<div class="game-over">
+			<p>Fin del Juego!! :(</p><br>
+			<p>La palabra secreta era:<textarea class="palabra-secreta" readonly></textarea>
+			<p>Quieres Volver a Intentarlo?</p>
+			<br><br><br>
+			<button class="btt-Volver-Jugar">Volver a Jugar</button>
+			<a href="index.html"><button>Volver al Inicio</button></a>
+		</div>
+
+		<div class="ganador">
+			<p>Ganaste!! :)</p><br>
+			<p>Felicitaciones!!</p><br>
+			<p>Quieres Volver a Jugar?</p>
+			<br><br><br>
+			<button class="btt-Volver-Jugar-ganador">Volver a Jugar</button>
+			<a href="index.html"><button>Volver al Inicio</button></a>
+		</div>
+	</main>
+
+	
+
+
+	<footer class="caja">
+		<p>&copy Copyright Encriptador Alura - 2022</p>
+		<p>Autor: Ian Yevara  -  Mail: ianyevara@gmail.com</p>
+	</footer>
+
+	<script src="js/principal.js"></script>
+	<script src="js/ingresar-palabra.js"></script>
+	<script src="js/juegos.js"></script>
+</body>
+</html>
