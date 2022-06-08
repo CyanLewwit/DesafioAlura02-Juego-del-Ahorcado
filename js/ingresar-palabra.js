@@ -26,10 +26,16 @@ bttAgregarPalabras.addEventListener("click",function(event){
 	bttGuardar.addEventListener("click",function(event){
 		var palabra = Areapalabra.value;
 		palabra=palabra.toUpperCase();
-		ValidarPalabra(palabra);
-		Palabras.push(palabra);
-		Areapalabra.value = "";
 
+		if(ValidarPalabra(palabra)){
+			Palabras.push(palabra);
+			Areapalabra.value = "";
+		} else{
+			Areapalabra.value = "";
+			return;
+		}
+		
+		
 	})
 
 	/*Click en Boton Cancelar*/
@@ -42,7 +48,7 @@ bttAgregarPalabras.addEventListener("click",function(event){
 /**/
 function ValidarPalabra(texto){
 	var x = texto.length;/*Capturar la cantidad de letras*/
-	var cont = 0;
+	var cont = 0;/*Contador de Caracteres No Validos*/
 
 	for (var i = 0; i < x; i++) {
 		if(!(/[A-ZÑ]/i.test(texto.substring(i,i+1)))){
@@ -51,9 +57,10 @@ function ValidarPalabra(texto){
 	}
 	if (cont == 0) {
 		AreaErrorIngresarPalabra.classList.add("oculto");
-		return;
+		return true;
 	} else {
 		AreaErrorIngresarPalabra.classList.remove("oculto");
+		return false;
 	}
 }
 

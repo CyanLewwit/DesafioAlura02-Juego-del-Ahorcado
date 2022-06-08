@@ -30,7 +30,6 @@ bttIniciarJuego.addEventListener("click",function(event){
 	PalabraEscogida = Palabras[r];
 	ColocarLetrasGuiones(PalabraEscogida,0);
 
-	console.log(PalabraEscogida);
 
 	activarTeclado=true;
 })
@@ -68,7 +67,6 @@ bttVolverJugar.addEventListener("click",function(event){
 	PalabraEscogida = Palabras[r];
 	ColocarLetrasGuiones(PalabraEscogida,0);
 
-	console.log(PalabraEscogida);
 
 	DibujoAhorcado(0,pincel);
 
@@ -101,7 +99,6 @@ bttVolverJugarGanador.addEventListener("click",function(event){
 	PalabraEscogida = Palabras[r];
 	ColocarLetrasGuiones(PalabraEscogida,0);
 
-	console.log(PalabraEscogida);
 
 	DibujoAhorcado(0,pincel);
 
